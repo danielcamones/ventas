@@ -1,0 +1,50 @@
+body {
+  text-align: center;
+  background-color: #dfdfdf;
+}
+
+img {
+  max-width: 250px;
+  max-height: 150px;
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.arepas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.arepas > * {
+  flex: 1 1;
+}
+
+.arepa {
+  background: transparent;
+  text-align: center;
+  cursor: pointer;
+  min-width: 310px;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: all 0.3s ease-out;
+}
+
+.arepa:hover {
+  transform: scale(1.1);
+}
+
+.arepa figcaption {
+  padding: 1em;
+}
