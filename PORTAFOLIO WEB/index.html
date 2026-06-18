@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Camones Chinchay — Topografía & Minería</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="cvs"></canvas>
+<div class="noise"></div>
+<div class="mesh"></div>
+
+<nav class="nav" id="navbar">
+  <a href="#hero" class="nav-logo">
+    <div class="nav-logo-dot"></div>
+    <span class="nav-logo-text">D.Camones</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">Sobre mí</a></li>
+    <li><a href="#skills">Habilidades</a></li>
+    <li><a href="#education">Educación</a></li>
+    <li><a href="#experience">Experiencia</a></li>
+    <li><a href="#courses">Cursos</a></li>
+    <li><a href="#contact">Contacto</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Descargar CV</a>
+  <button class="hamburger" id="burger" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobile()">Sobre mí</a>
+  <a href="#skills" onclick="closeMobile()">Habilidades</a>
+  <a href="#education" onclick="closeMobile()">Educación</a>
+  <a href="#experience" onclick="closeMobile()">Experiencia</a>
+  <a href="#courses" onclick="closeMobile()">Cursos</a>
+  <a href="#contact" onclick="closeMobile()">Contacto</a>
+</div>
+
+<main>
+<section id="hero">
+  <div class="container">
+    <div class="hero-wrap">
+      <div class="hero-content">
+        <div class="hero-badge reveal d1">Disponible para proyectos</div>
+        
+        <h1 class="hero-name reveal d2" id="typewriter-container"></h1>
+        
+        <p class="hero-title reveal d3">
+          Técnico en <span>Topografía Superficial</span> y Minería
+        </p>
+        <p class="hero-desc reveal d4">
+          Profesional técnico orientado al logro de objetivos en el campo de la minería. 
+          Experiencia en operaciones mineras superficiales y subterráneas, topografía de precisión 
+          y herramientas de ingeniería CAD/GIS.
+        </p>
+        <div class="hero-btns reveal d4">
+          <a href="#contact" class="btn-primary">
+            <i class="fa-solid fa-download"></i> Descargar CV
+          </a>
+          <a href="#experience" class="btn-secondary">
+            <i class="fa-solid fa-briefcase"></i> Ver Experiencia
+          </a>
+        </div>
+
+        <div class="hero-tags-container reveal d5">
+          <div class="hero-tags">
+            <span class="tag"><i class="fa-solid fa-layer-group"></i> AutoCAD</span>
+            <span class="tag"><i class="fa-solid fa-mountain-sun"></i> Civil 3D</span>
+            <span class="tag"><i class="fa-solid fa-satellite"></i> Global Mapper</span>
+            <span class="tag"><i class="fa-solid fa-earth-americas"></i> Google Earth Pro</span>
+            <span class="tag"><i class="fa-solid fa-mountain"></i> Microsurvey Starnet</span>
+            <span class="tag"><i class="fa-solid fa-shield-virus"></i> Trimble Business Center (TBC) </span>
+            <span class="tag"><i class="fa-solid fa-cube"></i> Agisoft Metashape</span>
+            <span class="tag"><i class="fa-solid fa-file-word"></i> Microsoft Word</span>
+            <span class="tag"><i class="fa-solid fa-file-excel"></i> Microsoft Excel</span>
+            <span class="tag"><i class="fa-solid fa-brain"></i> Herramientas de IA</span>
+            
+            <span class="tag"><i class="fa-solid fa-layer-group"></i> AutoCAD</span>
+            <span class="tag"><i class="fa-solid fa-mountain-sun"></i> Civil 3D</span>
+            <span class="tag"><i class="fa-solid fa-satellite"></i> Global Mapper</span>
+            <span class="tag"><i class="fa-solid fa-earth-americas"></i> Google Earth Pro</span>
+            <span class="tag"><i class="fa-solid fa-mountain"></i> Microsurvey Starnet</span>
+            <span class="tag"><i class="fa-solid fa-shield-virus"></i> Trimble Business Center (TBC)</span>
+            <span class="tag"><i class="fa-solid fa-cube"></i> Agisoft Metashape</span>
+            <span class="tag"><i class="fa-solid fa-file-word"></i> Microsoft Word</span>
+            <span class="tag"><i class="fa-solid fa-file-excel"></i> Microsoft Excel</span>
+            <span class="tag"><i class="fa-solid fa-brain"></i> Herramientas de IA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-avatar reveal d3">
+        <div class="avatar-frame">
+          <div class="avatar-img">
+            <img src="FOTO PASAPORTE.jpeg" alt="Daniel Camones Chinchay" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-user\' style=\'font-size:5rem;color:var(--cyan);\'></i>'">
+          </div>
+        </div>
+        <div class="float-card fc1">
+          <i class="fa-solid fa-map-marker-alt" style="color:var(--cyan);font-size:.9rem;"></i>
+          <span>Recuay, Áncash</span>
+        </div>
+        <div class="float-card fc2">
+          <i class="fa-solid fa-graduation-cap" style="color:var(--violet);font-size:.9rem;"></i>
+          <span>IESTP Recuay</span>
+        </div>
+        <div class="avatar-badge">
+          <span>Topografía & Minería</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-label reveal">Perfil personal</div>
+    <h2 class="section-title reveal d1">Sobre <span class="accent">Mí</span></h2>
+    <div class="section-divider reveal d1"></div>
+
+    <div class="about-grid">
+      <div class="about-info reveal d2">
+        <div class="info-row">
+          <div class="info-icon" style="background:rgba(6,182,212,.12);"><i class="fa-solid fa-birthday-cake" style="color:var(--cyan);"></i></div>
+          <div><div class="info-key">Fecha de Nacimiento</div><div class="info-val">10 de Julio, 2002</div></div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon" style="background:rgba(59,130,246,.12);"><i class="fa-solid fa-map-pin" style="color:var(--blue);"></i></div>
+          <div><div class="info-key">Lugar de Nacimiento</div><div class="info-val">Recuay, Áncash — Perú</div></div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon" style="background:rgba(139,92,246,.12);"><i class="fa-solid fa-id-card" style="color:var(--violet);"></i></div>
+          <div><div class="info-key">DNI</div><div class="info-val">75188069</div></div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon" style="background:rgba(16,185,129,.12);"><i class="fa-solid fa-heart" style="color:var(--green);"></i></div>
+          <div><div class="info-key">Estado Civil</div><div class="info-val">Soltero</div></div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon" style="background:rgba(245,158,11,.12);"><i class="fa-solid fa-phone" style="color:var(--amber);"></i></div>
+          <div><div class="info-key">Teléfono</div><div class="info-val">901 030 647</div></div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon" style="background:rgba(6,182,212,.12);"><i class="fa-solid fa-envelope" style="color:var(--cyan);"></i></div>
+          <div><div class="info-key">Correo</div><div class="info-val">danielleyenda70@gmail.com</div></div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon" style="background:rgba(59,130,246,.12);"><i class="fa-solid fa-location-dot" style="color:var(--blue);"></i></div>
+          <div><div class="info-key">Dirección</div><div class="info-val">Jr. San Juan N° 302, Recuay</div></div>
+        </div>
+      </div>
+
+      <div class="about-text-col reveal d3">
+        <p class="about-text">
+          Soy un <strong>profesional técnico</strong> con formación en Topografía Superficial y Minería en el IESTP Recuay, 
+          con especial orientación al sector minero peruano. Cuento con experiencia práctica en 
+          <strong>operaciones de topografía</strong> y proyectos de construcción.
+        </p>
+        <p class="about-text">
+          Mi objetivo es el <strong>desarrollo profesional continuo</strong> en el campo de la Topografía Superficial y Minera, 
+          con clara orientación hacia el logro de objetivos concretos y la solución de problemas, 
+          implementando mejoras continuas en los proyectos donde participo.
+        </p>
+        <p class="about-text">
+          Tengo experiencia en <strong>minería subterránea y superficial</strong>, manejo de instrumentos topográficos de precisión 
+          (estaciones totales Leica, Trimble, South), y software especializado como AutoCAD 2023 y Civil 3D 2023.
+        </p>
+        
+        <div class="prog-bar-wrap">
+          <div class="prog-label"><span>Topografía de Campo</span><span style="color:var(--cyan);">90%</span></div>
+          <div class="prog-track"><div class="prog-fill" data-width=".90" style="background:linear-gradient(90deg,var(--cyan),var(--blue));"></div></div>
+        </div>
+        <br>
+        <div class="prog-bar-wrap">
+          <div class="prog-label"><span>AutoCAD / Civil 3D</span><span style="color:var(--violet);">80%</span></div>
+          <div class="prog-track"><div class="prog-fill" data-width=".80" style="background:linear-gradient(90deg,var(--violet),var(--blue));"></div></div>
+        </div>
+        <br>
+        <div class="prog-bar-wrap">
+          <div class="prog-label"><span>Minería Subterránea</span><span style="color:var(--green);">75%</span></div>
+          <div class="prog-track"><div class="prog-fill" data-width=".75" style="background:linear-gradient(90deg,var(--green),var(--cyan));"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <div class="section-label reveal">Capacidades técnicas</div>
+    <h2 class="section-title reveal d1">Mis <span class="accent">Habilidades</span></h2>
+    <div class="section-divider reveal d1"></div>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal d1">
+        <div class="skill-icon">💻</div>
+        <div class="skill-title">Informática e Ingeniería</div>
+        <ul class="skill-items">
+          <li>AutoCAD & Civil 3D</li>
+          <li>Agisoft Metashape (Fotomapeo)</li>
+          <li>Google Earth Pro</li>
+          <li>Microsoft Word & Excel Técnico</li>
+          <li>Herramientas de Inteligencia Artificial (IA)</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal d2">
+        <div class="skill-icon">🔭</div>
+        <div class="skill-title">Instrumentos</div>
+        <ul class="skill-items">
+          <li>Estación Total Leica</li>
+          <li>Estación Total Trimble</li>
+          <li>Estación Total South</li>
+          <li>Nivel de Ingeniero</li>
+          <li>Gps Diferencial</li>
+          <li>Dron DJI Mavic 3E</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal d3">
+        <div class="skill-icon">⛏️</div>
+        <div class="skill-title">Minería</div>
+        <ul class="skill-items">
+          <li>Minería subterránea</li>
+          <li>Minería superficial</li>
+          <li>IPERC — Identificación de peligros</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal d4">
+        <div class="skill-icon">🗺️</div>
+        <div class="skill-title">Topografía</div>
+        <ul class="skill-items">
+          <li>Levantamientos topográficos</li>
+          <li>Trazados y Replanteo</li>
+          <li>Subdivision de Parcelas</li>
+          <li>Cálculo de volúmenes</li>
+          <li>Planos topográficos,Perimetrico y Ubicacion</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal d5">
+        <div class="skill-icon">🛡️</div>
+        <div class="skill-title">Seguridad Minera</div>
+        <ul class="skill-items">
+          <li>IPERC 2021 — SENCICO</li>
+          <li>IPERC 2024</li>
+          <li>Inducción Antamina</li>
+          <li>DS 023-2017-EM Perú</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal d1">
+        <div class="skill-icon">🤝</div>
+        <div class="skill-title">Habilidades Blandas</div>
+        <ul class="skill-items">
+          <li>Trabajo en equipo</li>
+          <li>Resolución de problemas</li>
+          <li>Adaptabilidad en campo</li>
+          <li>Comunicación técnica</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="container">
+    <div class="section-label reveal">Formación académica</div>
+    <h2 class="section-title reveal d1">Mi <span class="accent">Educación</span></h2>
+    <div class="section-divider reveal d1"></div>
+
+    <div class="edu-timeline">
+      <div class="edu-item reveal d2">
+        <div class="edu-year">2024 – 2026<br><span style="color:var(--cyan);font-size:.68rem;">En curso</span></div>
+        <div class="edu-card">
+          <div class="edu-tag" style="color:var(--cyan);border-color:rgba(6,182,212,.4);background:rgba(6,182,212,.08);">
+            <i class="fa-solid fa-star" style="font-size:.55rem;"></i> ACTUAL
+          </div>
+          <div class="edu-title">Topografía Superficial y Minera</div>
+          <div class="edu-inst">Instituto de Educación Superior Público Recuay (EX ESCUELA DE MINAS) — Ciclo V</div>
+        </div>
+      </div>
+      <div class="edu-item reveal d3">
+        <div class="edu-year">2021 – 2023</div>
+        <div class="edu-card">
+          <div class="edu-tag" style="color:var(--violet);border-color:rgba(139,92,246,.4);background:rgba(139,92,246,.08);">
+            <i class="fa-solid fa-check" style="font-size:.55rem;"></i> COMPLETADO
+          </div>
+          <div class="edu-title">Técnico en Computación e Informática</div>
+          <div class="edu-inst">Instituto Superior Tecnológico de Recuay (EX ESCUELA DE MINAS)</div>
+        </div>
+      </div>
+      <div class="edu-item reveal d4">
+        <div class="edu-year">Secundaria</div>
+        <div class="edu-card">
+          <div class="edu-tag" style="color:var(--green);border-color:rgba(16,185,129,.3);background:rgba(16,185,129,.08);">
+            <i class="fa-solid fa-check" style="font-size:.55rem;"></i> COMPLETADO
+          </div>
+          <div class="edu-title">Educación Secundaria</div>
+          <div class="edu-inst">Colegio Nacional "César Vallejo" — Catac, Áncash</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <div class="section-label reveal">Trayectoria profesional</div>
+    <h2 class="section-title reveal d1">Experiencia <span class="accent">Laboral</span></h2>
+    <div class="section-divider reveal d1"></div>
+
+    <div class="exp-grid">
+      <div class="exp-card reveal d2">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">Asistente de Topografía</div>
+            <div class="exp-company">Grupo Morapa Perú Sac</div>
+          </div>
+          <div class="exp-period">Oct 2025 – Dic 2025</div>
+        </div>
+        <p class="exp-desc">Asistencia en labores de topografía para proyectos de la empresa. Manejo de instrumentos topográficos, recopilación de datos de campo y procesamiento de información para la elaboración de planos.</p>
+      </div>
+
+      <div class="exp-card reveal d3">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">Asistente de Soporte Técnico</div>
+            <div class="exp-company">W&F Consultores y Constructores</div>
+          </div>
+          <div class="exp-period">Ene 2023 – Ago 2023</div>
+        </div>
+        <p class="exp-desc">Asistencia técnica en proyectos de consultoría y construcción. Soporte en procesamiento de información técnica, elaboration de documentos y apoyo en coordinación de actividades de campo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="courses">
+  <div class="container">
+    <div class="section-label reveal">Capacitaciones</div>
+    <h2 class="section-title reveal d1">Cursos y <span class="accent">Certificaciones</span></h2>
+    <div class="section-divider reveal d1"></div>
+
+    <div class="courses-grid">
+      <div class="course-card reveal d1">
+        <div class="course-icon">🛡️</div>
+        <div class="course-title">Identificación de Peligros y Evaluación de Riesgos (IPERC) 2021</div>
+        <div class="course-org">SENCICO — Servicio Nacional de Capacitación</div>
+      </div>
+      <div class="course-card reveal d2">
+        <div class="course-icon">⚠️</div>
+        <div class="course-title">Identificación de Peligros y Evaluación de Riesgos (IPERC) 2024</div>
+        <div class="course-org">Actualización y renovación de certificación</div>
+      </div>
+      <div class="course-card reveal d3">
+        <div class="course-icon">⛏️</div>
+        <div class="course-title">Inducción Personal Nuevo Antamina</div>
+        <div class="course-org">Compañía Minera Antamina S.A. — Áncash, Perú</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-label reveal">Conectemos</div>
+    <h2 class="section-title reveal d1"><span class="accent">Contacto</span></h2>
+    <div class="section-divider reveal d1"></div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal d2">
+        <a href="tel:+51901030647" class="contact-link">
+          <div class="contact-link-icon" style="background:rgba(6,182,212,.15);">
+            <i class="fa-solid fa-phone" style="color:var(--cyan);"></i>
+          </div>
+          <div class="contact-link-text">
+            <strong>Teléfono</strong>
+            <span>+51 901 030 647</span>
+          </div>
+        </a>
+        <a href="mailto:danielleyenda70@gmail.com" class="contact-link">
+          <div class="contact-link-icon" style="background:rgba(59,130,246,.15);">
+            <i class="fa-solid fa-envelope" style="color:var(--blue);"></i>
+          </div>
+          <div class="contact-link-text">
+            <strong>Correo Electrónico</strong>
+            <span>danielleyenda70@gmail.com</span>
+          </div>
+        </a>
+        <div class="contact-link">
+          <div class="contact-link-icon" style="background:rgba(139,92,246,.15);">
+            <i class="fa-solid fa-location-dot" style="color:var(--violet);"></i>
+          </div>
+          <div class="contact-link-text">
+            <strong>Ubicación</strong>
+            <span>Jr. San Juan N° 302, Recuay — Áncash, Perú</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cv-card reveal d3">
+        <div class="cv-icon">📄</div>
+        <div class="cv-title">Curriculum Vitae</div>
+        <p class="cv-desc">Descarga mi CV completo en PDF con toda mi información profesional y académica.</p>
+        <a href="daniel_cv.pdf" download class="cv-btn" id="cvDownload">
+          <i class="fa-solid fa-file-pdf"></i>
+          Descargar CV — PDF
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-copy">
+    © 2026 <span>Daniel Eduardo Camones Chinchay</span> · Topografía Superficial y Minería
+  </div>
+</footer>
+
+<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="js.js"></script>
+</body>
+</html>
